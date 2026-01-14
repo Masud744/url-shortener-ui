@@ -6,9 +6,14 @@ This UI allows users to submit long URLs and receive shortened URLs with visual 
 
 ---
 
-## Live Demo
+## Live web
 
 https://masud744-url-shortener.netlify.app/
+
+## Demo Video
+
+[![Demo Video](https://img.youtube.com/vi/_utEkyYTlkE/0.jpg)](https://youtu.be/_utEkyYTlkE)
+
 
 ## Features
 
