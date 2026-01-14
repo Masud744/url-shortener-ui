@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+}
+
+/* Glass card */
+.glass-card {
+  width: 360px;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  box-shadow: 10px 10px 50px rgba(140, 172, 209, 0.5);
+  z-index: 2;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.loader {
+  margin: 15px auto;
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(255,255,255,0.2);
+  border-top: 4px solid #60a5fa;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.result {
+  margin-top: 15px;
+  background: rgba(0,0,0,0.3);
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Background blobs */
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  filter: blur(120px);
+  opacity: 0.6;
+}
+
+.blob1 {
+  background: #2772eb;
+  top: -100px;
+  left: -100px;
+}
+
+.blob2 {
+  background: #7d24d1;
+  bottom: -100px;
+  right: -100px;
+}
+/* --- Toast --- */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #22c55e;
+  color: black;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  z-index: 99;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toast.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(20px);
+}
+
+/* --- Copy Button --- */
+.copy-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #0f172a;
+  color: #c7d2fe;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.copy-btn:hover {
+  background: #1e293b;
+}

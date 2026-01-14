@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TinyURL</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background blobs -->
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+
+  <div class="glass-card">
+    <h1>🔗 URL Shortner</h1>
+    <p class="subtitle">Transform long URLs into tiny ones</p>
+
+    <input type="text" id="longUrl" placeholder="Enter your long URL" />
+    <button id="shortenBtn">Shorten URL</button>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <!-- Result -->
+    <div id="result" class="result hidden"></div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden">Link copied!</div>
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
